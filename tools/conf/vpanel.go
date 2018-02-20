@@ -7,7 +7,7 @@ import (
 
 type VPanelConfig struct {
 	Api          string              `json:"api"`
-	Id           int32               `json:"id"`
+	Id           string              `json:"id"`
 	Key          string              `json:"key"`
 	Features     *FeaturesConfig     `json:"features"`
 	Defaults     *VMessDefaultConfig `json:"default"`
