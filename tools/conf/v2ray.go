@@ -18,6 +18,7 @@ var (
 		"shadowsocks":   func() interface{} { return new(ShadowsocksServerConfig) },
 		"socks":         func() interface{} { return new(SocksServerConfig) },
 		"vmess":         func() interface{} { return new(VMessInboundConfig) },
+		"vpanel":        func() interface{} { return new(VPanelConfig) },
 	}, "protocol", "settings")
 
 	outboundConfigLoader = NewJSONConfigLoader(ConfigCreatorCache{
